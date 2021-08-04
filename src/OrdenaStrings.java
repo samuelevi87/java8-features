@@ -21,6 +21,12 @@ public class OrdenaStrings {
 		ComparadorPorTamanho comparador = new ComparadorPorTamanho();
 		Collections.sort(palavras, comparador);
 		palavras.forEach(System.out::println);
+		
+		/**
+		 * Default Method sort, na interface List.
+		 */
+		palavras.sort(comparador);
+		palavras.forEach(System.out::println);
 	}
 }
 
